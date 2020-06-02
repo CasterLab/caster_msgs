@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>caster_msgs</name>
-  <version>0.0.0</version>
-  <description>The caster_msgs package</description>
+  <version>2.1.0</version>
+  <description>ROS package for Caster robot msgs, services, and actionlib msgs</description>
 
-  <maintainer email="ye@iquotient-robotics.com">Ye Tian</maintainer>
+  <maintainer email="ye.tian@iquotient-robotics.com">Ye Tian</maintainer>
 
   <license>MIT</license>
 
-  <url type="website">https://github.com/CasterLab/caster</url>
-  <url type="repository">https://github.com/CasterLab/caster</url>
-  <url type="bugtracker">https://github.com/CasterLab/caster/issues</url>
+  <url type="website">https://github.com/CasterLab/caster_msgs</url>
+  <url type="repository">https://github.com/CasterLab/caster_msgs</url>
+  <url type="bugtracker">https://github.com/CasterLab/caster_msgs/issues</url>
 
-  <author email="ye@iquotient-robotics.com">Ye Tian</author>
+  <author email="ye.tian@iquotient-robotics.com">Ye Tian</author>
 
   <buildtool_depend>catkin</buildtool_depend>
 
