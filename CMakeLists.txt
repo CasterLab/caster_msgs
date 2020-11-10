@@ -7,7 +7,14 @@ add_compile_options(-std=c++11)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED genmsg actionlib actionlib_msgs)
+find_package(catkin REQUIRED COMPONENTS
+  message_generation
+  message_runtime
+  genmsg 
+  actionlib 
+  actionlib_msgs 
+  std_msgs
+  )
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -43,11 +50,12 @@ find_package(catkin REQUIRED genmsg actionlib actionlib_msgs)
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+add_message_files(
+  FILES
+  CasterBMS.msg
+  CasterPDB.msg
+  CasterStatus.msg
+)
 
 ## Generate services in the 'srv' folder
 add_service_files(
@@ -114,7 +122,7 @@ catkin_package(
 ## Your package locations should be listed before other locations
 include_directories(
 # include
-# ${catkin_INCLUDE_DIRS}
+  ${catkin_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
