@@ -54,7 +54,7 @@ add_message_files(
   FILES
   CasterBMS.msg
   CasterPDB.msg
-  CasterStatus.msg
+  CasterState.msg
 )
 
 ## Generate services in the 'srv' folder
